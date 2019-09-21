@@ -1,5 +1,7 @@
 import pkg from './package'
 
+require('dotenv').config()
+
 export default {
   mode: 'universal',
 
@@ -39,6 +41,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/dotenv'
   ],
 
   /*
@@ -50,5 +53,17 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+  /*
+  ** Router configuration
+  */
+   router: {
+    base: process.env.BASE_ROUTER
+ },
+  /*
+  ** Server configuration
+  */
+  server: {
+      port: 7000, // default: 3000
   }
 }
