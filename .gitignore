@@ -82,3 +82,23 @@ dist
 
 # Service worker
 sw.*
+
+.htaccess
+.DS_Store
+.sass-cache/
+robots.txt
+
+# Wordpress specific
+
+wordpress/*
+wordpress/
+wp-config.php
+uploads/
+upgrade/*
+backup-db/*
+advanced-cache.php
+wp-cache-config.php
+w3tc-config/*
+cache/*
+supercache/*
+ewww/
