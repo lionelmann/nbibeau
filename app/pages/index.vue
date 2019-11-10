@@ -1,68 +1,70 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        nbibeau
-      </h1>
-      <h2 class="subtitle">
-        My groovy Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
+<main>
+  <header>
+    <div class="hero">
+        <div class="hero-inner">
+           <h1>Nathalie Bibeau</h1>
+        </div>
+    </div>
+  </header>
+  <section>
+    <div class="grid" v-for="work in works" :key="work.id">
+      <div>
+        <h2>{{work.title.rendered}}</h2><br>
+        <p>{{work.meta_box['_works_description']}}</p>
+        <p><a :href="work.meta_box['_works_link']">View</a></p>
+      </div>
+      <div>
+        <img src="~static/hero.jpg">
       </div>
     </div>
   </section>
+  <footer>
+    Copyright 2019
+  </footer>
+</main>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  async asyncData({ $axios }) {
+    let works = await $axios.$get('http://nbibeau.test/cms/wp-json/wp/v2/work/?_embed')
+    return { works }
+  },
+  date(){
+    return{
+      backgroundUrl:require('~/static/hero.jpg') 
+    }
   }
 }
 </script>
 
-<style>
-.container {
+<style scoped>
+
+section {
+  max-width: 1280px;
   margin: 0 auto;
-  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin: 2rem;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('~static/hero.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 </style>
