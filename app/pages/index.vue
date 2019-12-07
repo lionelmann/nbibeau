@@ -1,27 +1,22 @@
 <template>
-<main>
-  <header>
-    <div class="hero">
-        <div class="hero-inner">
-           <h1>Nathalie Bibeau</h1>
-        </div>
-    </div>
-  </header>
+    <main>
+        <header>
+            <div class="hero"></div>
+            <div>
+                <h1 class="headline">Nathalie Bibeau</h1>
+            </div>
+        </header>
   <section>
     <div class="grid" v-for="work in works" :key="work.id">
       <div>
         <h2>{{work.title.rendered}}</h2><br>
+        <img src="https://source.unsplash.com/random">
         <p>{{work.meta_box['_works_description']}}</p>
         <p><a :href="work.meta_box['_works_link']">View</a></p>
       </div>
-      <div>
-        <img src="~static/hero.jpg">
-      </div>
     </div>
   </section>
-  <footer>
-    Copyright 2019
-  </footer>
+
 </main>
 </template>
 
@@ -33,38 +28,39 @@ export default {
   },
   date(){
     return{
-      backgroundUrl:require('~/static/hero.jpg') 
+      image:require('~/static/hero.jpg') 
     }
   }
 }
 </script>
 
 <style scoped>
-
-section {
-  max-width: 1280px;
-  margin: 0 auto;
+header {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background-color: #FB9A52;
+    color: white;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  margin: 2rem;
-}
-
-.hero {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+header div {
+    display:grid; 
   align-items: center;
-  text-align: center;
-  color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('~static/hero.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  justify-content: center;
+}
+.hero {
+    background-image:url('~static/hero.jpg');
+    background-position: center;
+    background-size:cover;
+}
+.headline {
+    border: 4px solid white;
+    padding: 2rem;
+}
+section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    max-width: 1366px;
+    padding: 30px;
 }
 </style>
