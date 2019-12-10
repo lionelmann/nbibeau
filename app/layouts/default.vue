@@ -6,8 +6,7 @@
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Scope One', serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -16,6 +15,11 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive;
+    color: #735C4F;
 }
 
 *,
