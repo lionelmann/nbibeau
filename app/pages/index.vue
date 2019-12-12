@@ -24,7 +24,7 @@
 <script>
 export default {
   async asyncData({ $axios }) {
-    let works = await $axios.$get('http://nbibeau.test/cms/wp-json/wp/v2/work/?_embed')
+      let works = await $axios.$get(`${process.env.BASE_API}/wp-json/wp/v2/work/?_embed`)
     return { works }
   },
   date(){
