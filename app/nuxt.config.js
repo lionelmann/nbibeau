@@ -59,9 +59,9 @@ export default {
   /*
   ** Router configuration
   */
-/*j   router: {
+   router: {
     base: process.env.BASE_ROUTER
- },*/
+ },
   /*
   ** Server configuration
   */
