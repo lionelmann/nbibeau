@@ -1,0 +1,5 @@
+Raised in the rust belt of Canada, Nathalie Bibeau is an award-winning filmmaker. She began her career in public broadcasting, producing documentary projects such as 8th Fire and Africa on the Move, winner of the Gemini for Best Documentary Series. In recent years, she was the Series Director for the seven-episode documentary, Back in Time for Dinner and was a member of the producing team for the feature film, Sugar Coated (dir: Michèle Hozer) which premiered at the Hot Docs International Film Festival (2015), was nominated for three Canadian Screen Awards and won the Donald Brittain Award for Best Social and Political Documentary. In other lives, Nathalie has written for the Globe & Mail, volunteered for War Child in Ethiopia and worked for the Department of Foreign Affairs in Lithuania. She is a mother of two and is fluent in French, English and Swedish.
+
+In 2020, Nathalie’s first feature film, The Walrus and the Whistleblower, won the top Audience Award at the Hot Docs International Film Festival, travelled to over twenty festivals, and qualified for the Academy Awards.
+
+She went back to the rust belt to make it.
