@@ -5,7 +5,7 @@ broadcaster: "CBC / Radio-Canada"
 year: 2012
 roles: "Producer"
 length: "4 x 60 mins"
-website: "https://"
+website: "https://www.cbc.ca/firsthand/blog/8th-fire-wabs-walk-through-history"
 image: "8th-fire.png"
 video: "https://www.youtube.com/watch?v=FDYDGOOHvU4"
 ---

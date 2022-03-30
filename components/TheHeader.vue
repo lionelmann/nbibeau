@@ -1,11 +1,5 @@
 <template>
   <div>
-    <!--<header>
-      <section>
-        <h1>Nathalie Bibeau is an award-winning filmmaker.</h1>
-      </section>
-    </header>-->
-
     <header>
       <div class="hero"></div>
       <div>
@@ -23,7 +17,7 @@ export default {};
 header {
   display: grid;
   grid-template-columns: 1fr;
-  height: 100vh;
+  height: 800px;
   /*background-color: #37474f;*/
   background-color: #735c4f;
   color: #f2cf63;
@@ -50,7 +44,7 @@ h1 {
   font-size: 4rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   header {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -9,7 +9,12 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Nathalie Bibeau is an award-winning filmmaker known for her artistic approach to controversial stories. ",
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -31,7 +36,7 @@ export default {
   css: [],
 
   /*
-   ** Plugins to load before mounting the App
+   ** Plugins to load before mounting the App  //we love you very much//
    */
   plugins: [],
 

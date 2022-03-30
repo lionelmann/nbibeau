@@ -5,7 +5,7 @@ broadcaster: "Sphère Média, Radio-Canada"
 year: 2020
 roles: "Réalisatrice / Productrice de contenu"
 length: "1 x 60 mins"
-website: "https://"
+website: "https://spheremedia.ca/fr/productions/cerebrum-24-heures-au-coeur-de-la-realite"
 image: "cerebrum.webp"
 video: "https://ici.tou.tv/cerebrum-24-heures-au-coeur-de-la-realite/S01E01?lectureauto=1"
 ---
