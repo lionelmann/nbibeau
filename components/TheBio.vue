@@ -22,13 +22,19 @@ export default {
 }
 
 .bio {
-  column-count: 2;
+  column-count: 1;
   column-gap: 50px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 600px) {
+  .bio {
+    column-count: 2;
+  }
 }
 
 .bio p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .bio p:first-child::first-letter {

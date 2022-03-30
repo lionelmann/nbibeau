@@ -1,4 +1,5 @@
 export default {
+  target: "static",
   components: true,
   /*
    ** Headers of the page
@@ -14,7 +15,7 @@ export default {
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Bebas+Neue|Scope+One&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Scope+One&display=swap",
       },
     ],
   },

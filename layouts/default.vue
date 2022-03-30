@@ -29,10 +29,9 @@ h6 {
   color: #735c4f;
 }
 
-h1 {
-  font-size: 6rem;
+h3 {
+  margin: 1rem 0;
 }
-
 *,
 *:before,
 *:after {

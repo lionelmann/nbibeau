@@ -22,25 +22,51 @@ export default {};
 <style lang="css" scoped>
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 70vh;
-  background-color: #37474f;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  /*background-color: #37474f;*/
   background-color: #735c4f;
   color: #f2cf63;
 }
+
 header div {
   display: grid;
   align-items: center;
   justify-content: center;
 }
+
 .hero {
   background-image: url("~static/hero.jpg");
   background-position: center;
   background-size: cover;
 }
+
 .headline {
-  /*border: 4px solid #f2cf63;*/
-  padding: 4rem;
+  padding: 40px;
   color: #f2cf63;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+@media (min-width: 600px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    /*background-color: #37474f;*/
+    background-color: #735c4f;
+    color: #f2cf63;
+  }
+
+  .headline {
+    padding: 4rem;
+    color: #f2cf63;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
 }
 </style>

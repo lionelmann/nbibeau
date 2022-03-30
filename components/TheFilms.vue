@@ -3,10 +3,11 @@
     <div class="brick" v-for="(film, index) in films" :key="index">
       <img :src="`/cover/${film.image}`" />
       <h2>{{ film.title }} / {{ film.year }}</h2>
-      <div>{{ film.category }}</div>
-      <div>{{ film.roles }}</div>
-      <div>{{ film.length }}</div>
-      <div>{{ film.broadcaster }}</div>
+      <br />
+      <div class="meta">{{ film.category }}</div>
+      <div class="meta">{{ film.roles }}</div>
+      <div class="meta">{{ film.length }}</div>
+      <div class="meta">{{ film.broadcaster }}</div>
       <br />
       <nuxt-content :document="film"></nuxt-content>
       <br />
@@ -27,6 +28,22 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.meta {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  color: #735c4f;
+}
+
+a:hover {
+  border-bottom: 1px solid #735c4f;
+}
+
 /* Masonry grid */
 .masonry {
   transition: all 0.5s ease-in-out;
