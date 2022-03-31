@@ -1,7 +1,7 @@
 <template>
   <main>
     <TheBio />
-    <!--<TheFilms />-->
+    <TheFilms />
   </main>
 </template>
 

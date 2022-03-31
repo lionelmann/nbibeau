@@ -38,13 +38,13 @@ export default {
 }
 
 .bio p:first-child::first-letter {
-  color: #37474f;
   color: #735c4f;
   padding: 0 0.6rem 0 0;
   margin: 0 0.3rem 0 0;
   font-family: "Bebas Neue", cursive;
-  font-size: 7rem;
+  font-weight: bold;
+  font-size: 6rem;
   float: left;
-  line-height: 0.9;
+  line-height: 1.05;
 }
 </style>

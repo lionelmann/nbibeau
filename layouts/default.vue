@@ -13,7 +13,7 @@ html {
   /*word-spacing: 1px;*/ /*We love you always!*/
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
+  /*-moz-osx-font-smoothing: grayscale;*/
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   height: 100%;
@@ -27,10 +27,11 @@ h5,
 h6 {
   font-family: "Bebas Neue", cursive;
   color: #735c4f;
+  letter-spacing: 0.3px;
 }
 
 h3 {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 *,
 *:before,

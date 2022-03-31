@@ -29,8 +29,8 @@ export default {
 
 <style lang="css" scoped>
 .meta {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-family: "Noto Sans", sans-serif;
+  color: #735c4f;
   font-size: 0.9rem;
 }
 
@@ -40,8 +40,13 @@ a {
   color: #735c4f;
 }
 
+img {
+  /*border: 3px solid #735c4f;*/
+  filter: drop-shadow(10px 10px 0px rgba(115, 92, 79, 0.4));
+}
+
 a:hover {
-  border-bottom: 1px solid #735c4f;
+  border-bottom: 2px solid #735c4f;
 }
 
 /* Masonry grid */
@@ -50,6 +55,7 @@ a:hover {
   column-gap: 30px;
   column-fill: initial;
   padding: 30px;
+  background-color: #f2cf63;
 }
 
 /* Masonry item */
@@ -63,23 +69,23 @@ a:hover {
 .masonry .brick img {
   transition: all 0.5s ease-in-out;
   backface-visibility: hidden; /* Remove Image flickering on hover */
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .masonry .brick:hover img {
-  opacity: 0.75;
+  /*opacity: 0.75;*/
 }
 
 /* Bordered masonry */
 .masonry.bordered {
-  column-rule: 1px solid #eee;
+  column-rule: 0px solid rgba(115, 92, 79, 0.2);
   column-gap: 50px;
 }
 
 .masonry.bordered .brick {
   padding-bottom: 25px;
   margin-bottom: 25px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(115, 92, 79, 0.2);
 }
 
 /* Gutterless masonry */

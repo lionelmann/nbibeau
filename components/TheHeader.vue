@@ -3,7 +3,7 @@
     <header>
       <div class="hero"></div>
       <div>
-        <h1 class="headline">Nathalie Bibeau <br />award-winning filmmaker.</h1>
+        <h1 class="headline">Nathalie Bibeau <br />award-winning filmmaker</h1>
       </div>
     </header>
   </div>
