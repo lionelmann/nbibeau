@@ -43,7 +43,7 @@ export default {
   margin: 0 0.3rem 0 0;
   font-family: "Bebas Neue", cursive;
   font-weight: bold;
-  font-size: 6rem;
+  font-size: 4rem;
   float: left;
   line-height: 1.05;
 }
