@@ -46,10 +46,10 @@ export default {
 .bio p:first-child::first-letter {
   color: #735c4f;
   padding: 0 0.6rem 0 0;
-  margin: 0 0.3rem 0 0;
+  margin: 0 13px 0 0;
   font-family: "Bebas Neue", cursive;
   font-weight: bold;
-  font-size: 6rem;
+  font-size: 5rem;
   float: left;
   line-height: 1;
 }
