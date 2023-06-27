@@ -30,7 +30,7 @@ header div {
 }
 
 .hero {
-  background-image: url("~/static/hero.jpg");
+  background-image: url("/hero.jpg");
   background-position: center;
   background-size: cover;
 }
