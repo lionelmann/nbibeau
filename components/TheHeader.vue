@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <div class="hero"></div>
+      <img class="hero" src="/hero.jpg" alt="" />
       <div>
         <h1 class="headline">Nathalie Bibeau <br />award-winning filmmaker</h1>
       </div>
@@ -30,9 +30,10 @@ header div {
 }
 
 .hero {
-  background-image: url("/hero.jpg");
-  background-position: center;
-  background-size: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .headline {
