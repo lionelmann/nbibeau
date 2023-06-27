@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <img class="hero" src="/hero.jpg" alt="" />
+      <img class="hero" src="~/assets/hero.jpg" alt="" />
       <div>
         <h1 class="headline">Nathalie Bibeau <br />award-winning filmmaker</h1>
       </div>
